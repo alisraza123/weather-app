@@ -1,0 +1,179 @@
+*{
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.weatherBox{
+    width: 25vw;
+    height: 72vh; 
+    border-radius: 10px;  
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: inset -5px -5px 10px 3px rgba(255, 255, 255, 0.5), inset 5px 5px 10px 3px rgba(0, 0, 0, 0.3), 0px 0px 20px 5px grey;
+}
+.weatherBox>img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+}
+.insideBox{
+    /* z-index: 2; */
+    width: 100%;
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    /* position: absolute; */
+    /* background-color:rgb(106, 168, 106); */
+}
+.insideBox .upper{
+    width: 100%;
+    height: 25%;
+    /* background-color: #242424; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1vw;
+}
+.insideBox .upper div:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5vw;
+}
+.insideBox .upper div{
+
+}
+.location{
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+.insideBox .upper div h4{
+    font-size: 1.5vw;
+    color: white;
+    font-weight: 500;
+}
+.insideBox .lower{
+    width: 100%;
+    height: 30%;
+    /* background-color: red; */
+    display: flex;
+    margin-bottom: 1.5vw;
+}
+.insideBox .lower .left{
+flex-basis: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+/* background-color: black; */
+color: white;
+}
+.insideBox .lower .left p{
+    font-size:4vw;
+    
+    }
+.insideBox .lower .right{
+    flex-basis: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+gap: .3vw;
+}
+.insideBox .lower .right>img{
+    width: 4vw;
+    /* filter: invert(100%); */
+}
+.insideBox .lower .right h1{
+    font-weight: 600;
+    font-size: 2vw;
+}
+.humidity{
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+gap: .5vw;
+}
+.humidity>img{
+    width: 1vw;
+    filter: invert(100%);
+}
+.humidity h4{
+    font-size: 1vw;
+    font-weight: 100;
+}
+.info{
+    display: flex;
+    gap: 1vw;
+}
+.left>p{
+    font-size: 5vw;
+    font-weight: 100;
+}
+.middle{
+    display: flex;
+    width: 100%;
+    gap: 1vw;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+.middle input{
+    flex-basis: 80%;
+    padding: .6vw 1vw .6vw .8vw;
+    border: none;
+    outline: none;
+    background-color: rgba(128, 128, 128, 0.075);
+    border: 1px solid rgba(0, 0, 0, 0.247);
+    border-radius: 10px;
+    font-size: .8vw;
+    color: black;
+}
+.middle button{
+    flex-basis: 20%;
+    padding:.5vw 0vw;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid grey;
+    cursor: pointer;
+    transition: .3s all ;
+    color: black;
+}
+.middle button:active{
+    scale:.8
+}
+.middle button:hover{
+    background-color: #019dc5;
+    border: none;
+    color: white;
+}
+.left{
+    flex-direction: column;
+    gap: 1vw;
+}
+.miMaxTemp{
+    display: flex;
+    gap: 1vw;
+}
+.miMaxTemp p{
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+.create{
+    position: absolute;
+    color:white;
+    bottom: 1vw;
+    width: 100%;
+    text-align: center;
+}
